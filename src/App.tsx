@@ -231,7 +231,10 @@ export default function App() {
   }, [gameStarted, gameOver]);
 
   return (
-    <div className="min-h-screen bg-orange-50 flex flex-col items-center justify-center p-4 font-sans text-slate-900">
+    <div className="min-h-screen bg-orange-50 flex flex-col items-center justify-center p-4 font-sans text-slate-900 relative">
+      <div className="absolute top-4 right-4 text-orange-900/60 font-bold text-sm bg-white/50 backdrop-blur px-3 py-1 rounded-full border border-orange-200">
+        개발자 : 심유정
+      </div>
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
